@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html> <!--<![endif]-->
+<head>
+	<style>
+    @media(max-width: 750px) {
+  .call-to-action .container {
+    margin-right: auto!important;
+    margin-top: 100px!important;
+  }
+  .btns a{
+    margin: 0!important;
+  }
+}
+		.navigation{
+			background-color: rgba(0, 0, 0, 0.95)!important;
+		}
+		.sticky-header a{
+			color: white!important;
+
+		}
+		.navigation a:hover{
+			color: rgb(255, 123, 0)!important;
+		}
+
+		.nextArrow, .prevArrow{
+			background-color: orange!important;
+		}
+		.nextArrow:hover, .prevArrow:hover{
+			background-color: rgb(255, 136, 0)!important;
+
+		}
+  </style>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script> -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-storage.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAzPb7tmEhFhnHM6gZeY3e2GDxbfQK40CQ",
+    authDomain: "kckonam.firebaseapp.com",
+    projectId: "kckonam",
+    storageBucket: "kckonam.appspot.com",
+    messagingSenderId: "404637331106",
+    appId: "1:404637331106:web:3dde4a1c16f5e44aea71fb",
+    measurementId: "G-95SJBWQ7GS"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Bingo One page parallax responsive HTML Template ">
+  
+  <meta name="author" content="Themefisher.com">
+
+  <title>Bingo | Responsive Multipurpose Parallax HTML5 Template</title>
+
+<!-- Mobile Specific Meta
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  
+  <!-- CSS
+  ================================================== -->
+  <!-- Themefisher Icon font -->
+  <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <!-- Lightbox.min css -->
+  <link rel="stylesheet" href="plugins/lightbox2/dist/css/lightbox.min.css">
+  <!-- animation css -->
+  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <!-- Slick Carousel -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">  
+
+</head>
+
+<body id="body">
+
+ <!--
+  Start Preloader
+  ==================================== -->
+  <div id="preloader">
+    <div class='preloader'>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div> 
+  <!--
+  End Preloader
+  ==================================== -->
+
+
+  
+
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation fixed-top">
+  <div class="container">
+    <!-- main nav -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- logo -->
+      <a class="navbar-brand logo" href="index.html">
+        <img class="logo-default" src="images/kcklogo.png"  height="60px" alt="logo"/>
+        <img class="logo-white" src="images/kcklogo.png" height="60px" alt="logo"/>
+      </a>
+      <!-- /logo -->
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+
+      
+    </nav>
+    <!-- /main nav -->
+  </div>
+</header>
+<!--
+End Fixed Navigation
+==================================== -->
+
+
+
+<!--
+Start Call To Action
+==================================== -->
+<section style="padding:10px 0px;background-image: url(images/paysam.jpg); background-size: cover;" class="call-to-action section">
+	<div style="background-color: rgba(0, 0, 0, 0.5);height: 100%; width: 50%; margin-right: 0%;margin-top:100px; padding: 20px 20px;" class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<h2>Onam Sadhya</h2>
+				<!-- <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit.</p> -->
+        <!-- <a href="" class="btn btn-main">Contact Us</a> -->
+        
+        <form id="sadhyaForm"style="text-align: left;" action="">
+          <label for="" style="margin-left: 2px;">Email</label>
+          <input id="email" type="text" placeholder="Email" class="form-control" style="color:white;background-color: rgba(0, 0, 0, 0.5);">
+          <br>
+          <label for="" style="margin-left: 2px;">Phone Number</label>
+          <input id="phone" type="text" placeholder="Phone Number" class="form-control" style="color:white;background-color: rgba(0, 0, 0, 0.5);">
+        <br>
+          <label for="" style="margin-left: 2px;">City</label>
+          <select id="city" class="form-control" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.5);" name="city" id="city">
+            <option value="def" selected hidden>Select a city</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Banglore">Banglore</option>
+          </select>
+          <br>
+          <label for="" style="margin-left: 2px;">Reservation Date</label>
+          <select id="rDate" class="form-control" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.5);" name="city" id="city">
+            <option value="def" selected hidden>Select the date</option>
+            <option value="20">20/8/2021</option>
+            <option value="21">21/8/2021</option>
+          </select>
+<br>
+<label for="" style="margin-left: 2px;">Time Slot</label>
+          <select id="slot" class="form-control" style="cursor:pointer;color:white;background-color: rgba(0, 0, 0, 0.5);" name="city" id="city">
+            <option value="def" selected hidden>Select the Slot</option>
+            <option value="11">11:00 AM</option>
+            <option value="12">12:00 PM</option>
+            <option value="1">1:00 PM</option>
+            <option value="2">2:00 PM</option>
+            <option value="3">3:00 PM</option>
+
+          </select>
+<br>
+<label for="" style="margin-left: 2px;">Number of people</label>
+<input id="seats" type="text" placeholder="Number or people" class="form-control" style="color:white;background-color: rgba(0, 0, 0, 0.5);">
+<br>
+<label for="" style="margin-left: 2px;">Questions and comments</label>
+<input type="text" id="qac" placeholder="Questions and comments" class="form-control" style="color:white;background-color: rgba(0, 0, 0, 0.5);">
+<br>
+        </form>
+        <button onclick="checkSlot()" class="form-control btn btn-warning">Submit</button>
+
+			</div>
+		</div> 		<!-- End row -->
+	</div>   	<!-- End container -->
+</section>   <!-- End section -->
+
+<!--
+		Start Counter Section
+		==================================== -->
+		
+
+
+    <footer id="footer" class="bg-one">
+      <div style="padding: 30px 0px;" class="top-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <center>  <img style="margin-top:20px" src="images/kcklogo.png" height="120px" alt="">
+    </center>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <center>
+                   <h3>Contact</h3>
+            <p style="padding: 0;"> For Business Enquiries, contact : <br>
+              Chennai: 
+              10,Haddows road, Chennai-600006<br>
+              Ph.no:9855591010<br>
+              Bangalore: 
+              6th main block, Koramangala, Bangalore-560095<br>
+              Ph.no; 06364671010<br>
+          </p>
+              </center>
+           
+            </div>
+            <!-- End of .col-sm-3 -->
+    
+    
+    
+    
+          </div>
+        </div> <!-- end container -->
+      </div>
+     
+    </footer> <!-- end footer -->
+
+
+    <!-- end Footer Area
+    ========================================== -->
+    
+
+    
+    <!-- 
+    Essential Scripts
+    =====================================-->
+    <!-- Main jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+    <script  src="plugins/google-map/gmap.js"></script>
+
+    <!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script> 
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+    
+    <!-- Bootstrap4 -->
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Parallax -->
+    <script src="plugins/parallax/jquery.parallax-1.1.3.js"></script>
+    <!-- lightbox -->
+    <script src="plugins/lightbox2/dist/js/lightbox.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- filter -->
+    <script src="plugins/filterizr/jquery.filterizr.min.js"></script>
+    <!-- Smooth Scroll js -->
+    <script src="plugins/smooth-scroll/smooth-scroll.min.js"></script>
+    
+    <!-- Custom js -->
+    <script src="js/script.js"></script>
+
+    <script>
+      
+    </script>
+
+  </body>
+  </html>
